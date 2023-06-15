@@ -12,6 +12,7 @@ const config = {
 					{
 						loader: "babel-loader",
 						options: {
+							"presets": ["@babel/preset-typescript"],
 							plugins: ["@vue/babel-plugin-jsx"]
 						}
 					}

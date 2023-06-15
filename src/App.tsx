@@ -1,8 +1,12 @@
-import { ref } from "vue";
+import { FunctionalComponent, defineComponent, ref } from "vue";
 import vueLogo from "./assets/vue.svg";
 import "./App.css";
 
-export default {
+const FcNode: FunctionalComponent = () => {
+  return <>123123</>;
+};
+
+export default defineComponent({
   name: "App",
 
   setup() {
@@ -17,11 +21,12 @@ export default {
             <img src={vueLogo} class="logo vue" alt="Vue logo" />
           </a>
         </div>
-        <h1>Rspack + Vue JSX</h1>
+        <h1>Rspack + Vue TSX</h1>
+        <FcNode />
         <div class="card">
           <button onClick={add}>count is {count.value}</button>
         </div>
       </div>
     );
   },
-};
+});

@@ -12,8 +12,9 @@
     "vue": "3.2.45"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.2.2",
     "@babel/core": "7.21.0",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rspack/cli": "^0.2.2",
     "@vue/babel-plugin-jsx": "1.1.1",
     "babel-loader": "9.1.2"
   }
